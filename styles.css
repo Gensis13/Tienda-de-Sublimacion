@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: "Latin Modern Roman";
+    margin: 0;
+    padding: 0;
+    /* background: url('logo.png') no-repeat center center fixed; */ /* Comentado para quitar el fondo de imagen */
+    /* background-size: cover; */ /* Comentado para quitar el fondo de imagen */
+}
+
+header {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco más transparente */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el contenido dentro del contenedor de productos */
+    background: rgba(255, 255, 255, 0.95); /* Fondo blanco más transparente */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    width: 30%; /* Ajusta el tamaño de la imagen al 30% del contenedor del producto */
+    margin: 0 auto;
+    display: block;
+}
+
+.product button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close, .close-cellphone {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus, .close-cellphone:hover, .close-cellphone:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    color: #28a745;
+    display: block; /* Ensure it's visible */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #e74c3c;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 12px; /* Ajusta el tamaño del texto aquí */
+    margin: 0;
+}

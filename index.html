@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Sublimación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PersonalizArte</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#" id="view-cart">Ver Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a nuestra tienda</h2>
+            <p>Aquí encontrarás una gran variedad de productos sublimados personalizados.</p>
+        </section>
+        <section id="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <img src="taza.jpg" alt="Taza Personalizada">
+                <h3>Taza Personalizada</h3>
+                <p>Precio: $350</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="camiseta.jpg" alt="Camiseta Personalizada">
+                <h3>Camiseta Personalizada</h3>
+                <p>Precio: $500</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="llavero.jpg" alt="Llavero Personalizado">
+                <h3>Llavero Personalizado</h3>
+                <p>Precio: $200</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Teléfono: 829-462-0013/(829) 426-8027</p>
+            <p>La Romana, República Dominicana</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PersonalizArte/p>
+    </footer>
+
+    <!-- Modal del carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items">
+                <!-- Items del carrito aquí -->
+            </ul>
+            <button id="clear-cart">Cancelar Carrito</button>
+        </div>
+    </div>
+
+    <!-- Modal para ingresar número de celular -->
+    <div id="cellphone-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-cellphone">&times;</span>
+            <h2>Agregar Número de Celular</h2>
+            <form id="cellphone-form">
+                <label for="cellphone">Número de Celular:</label>
+                <input type="tel" id="cellphone" name="cellphone" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="confirmation-message" style="display: none;">Nos estaremos comunicando contigo.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
